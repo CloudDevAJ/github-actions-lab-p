@@ -16,3 +16,16 @@ jobs:
 
       - name: Show Operating System
         run: uname -a
+
+name: Second Action
+
+on:
+  push:
+
+jobs:
+  working:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: is it working?
+        run: echo "YES! it did"
