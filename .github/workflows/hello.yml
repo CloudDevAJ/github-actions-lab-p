@@ -11,12 +11,25 @@ jobs:
       - name: Say Hello
         run: echo "Hello from GitHub Actions!"
 
+      - name: Show date
+        run: date
+
       - name: Show Operating System
         run: uname -a
     
-  system-info:
+  exercise:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show date
-        run: date
+      - name: python-version
+        run: python --version
+
+      - name: git version
+        run: git --version
+
+      - name: current directory
+        run: pwd
+
+      - name: files list
+        run: ls -la
+      
