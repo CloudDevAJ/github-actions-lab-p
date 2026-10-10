@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  hello p:
+  hello-p:
     runs-on: ubuntu-latest
 
     steps:
